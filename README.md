@@ -2,7 +2,7 @@
 
 A small [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server written in Go with the [official Go SDK](https://github.com/modelcontextprotocol/go-sdk).
 It exposes weather tools backed by the free [Open-Meteo](https://open-meteo.com) API, so no API key is needed.
-It talks to MCP clients (IDEs, agents) over stdio.
+It talks to MCP clients (IDEs, agents) over STDIO.
 
 Built as a learning project for getting started with MCP in Go.
 It was based on the [weather MCP server](https://github.com/kodekloudhub/MCP-For-Beginners/tree/main/Weather-MCP-Server) of
@@ -40,6 +40,13 @@ To try it without a client, use the MCP Inspector:
 
 ```bash
 npx @modelcontextprotocol/inspector ./weather-mcp-server
+```
+
+You can also try it with Postman (after building it) by selecting a new MCP request
+and including the absolute path in the request:
+
+```bash
+<absolute-path>/weather-mcp-server
 ```
 
 ## Tools
